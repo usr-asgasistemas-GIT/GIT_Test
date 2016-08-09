@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:esb="http://alsb.telemar/soap/esb" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://alsb.telemar/wsdl/TerminalFixo/SolicitarRelatorioDadosCadastraisFixaAlsb" xmlns:ns="http://schemas.xmlsoap.org/soap/encoding/" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:solRelReq="http://alsb.telemar/xsd/TerminalFixo/SolicitarRelatorioDadosCadastraisFixaRequest" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://alsb.telemar/wsdl/TerminalFixo/SolicitarRelatorioDadosCadastraisFixaAlsb" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xs:schema>
+      <xs:import schemaLocation="SolicitarRelatorioDadosCadastraisFixaRequest.xsd" namespace="http://alsb.telemar/xsd/TerminalFixo/SolicitarRelatorioDadosCadastraisFixaRequest" />
+      <xs:import schemaLocation="ResponseControl.xsd" namespace="http://alsb.telemar/soap/esb" />
+    </xs:schema>
+  </wsdl:types>
+  <wsdl:message name="SolicitarRelatorioDadosCadastraisFixaRequest">
+    <wsdl:part name="SolicitarRelatorioDadosCadastraisFixaRequest" element="solRelReq:SolicitarRelatorioDadosCadastraisFixaRequest" />
+  </wsdl:message>
+  <wsdl:message name="SolicitarRelatorioDadosCadastraisFixaResponse">
+    <wsdl:part name="SolicitarRelatorioDadosCadastraisFixaRequest" element="esb:ResponseControl" />
+  </wsdl:message>
+  <wsdl:portType name="SolicitarRelatorioDadosCadastraisFixa">
+    <wsdl:operation name="SolicitarRelatorioDadosCadastraisFixa">
+      <wsdl:input message="tns:SolicitarRelatorioDadosCadastraisFixaRequest" />
+      <wsdl:output message="tns:SolicitarRelatorioDadosCadastraisFixaResponse" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="SolicitarRelatorioDadosCadastraisFixaSOAP" type="tns:SolicitarRelatorioDadosCadastraisFixa">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="SolicitarRelatorioDadosCadastraisFixa">
+      <soap:operation soapAction="http://alsb.telemar/TerminalFixo/SolicitarRelatorioDadosCadastraisFixa" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="SolicitarRelatorioDadosCadastraisFixa">
+    <wsdl:port name="SolicitarRelatorioDadosCadastraisFixaSOAP" binding="tns:SolicitarRelatorioDadosCadastraisFixaSOAP">
+      <soap:address location="http://alsb.telemar/TerminalFixo/SolicitarRelatorioDadosCadastraisFixaProxySoap" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

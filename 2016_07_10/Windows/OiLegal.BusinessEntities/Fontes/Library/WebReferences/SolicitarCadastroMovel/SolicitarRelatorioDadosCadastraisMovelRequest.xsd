@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xsd:schema xmlns:tns="http://alsb.telemar/xsd/TelefoniaMovel/SolicitarRelatorioDadosCadastraisMovelRequest" elementFormDefault="qualified" targetNamespace="http://alsb.telemar/xsd/TelefoniaMovel/SolicitarRelatorioDadosCadastraisMovelRequest" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <xsd:annotation>
+    <xsd:documentation>25/08/2009 - Criacao do arquivo  :: Raphael Ribeiro</xsd:documentation>
+  </xsd:annotation>
+  <xsd:element name="SolicitarRelatorioDadosCadastraisMovelRequest" type="tns:SolicitarRelatorioDadosCadastraisMovelRequest" />
+  <xsd:complexType name="SolicitarRelatorioDadosCadastraisMovelRequest">
+    <xsd:sequence>
+      <xsd:element name="idSolicitacao" type="tns:idSolicitacaoType" />
+      <xsd:element name="dataSolicitacao" type="tns:dataSolicitacaoType" />
+      <xsd:element minOccurs="0" name="idItemSolicitacao" type="tns:idItemSolicitacaoType" />
+      <xsd:element name="tipoSolicitacao" type="tns:tipoSolicitacaoType" />
+      <xsd:element minOccurs="0" name="msisdn" type="tns:msisdnType" />
+      <xsd:element minOccurs="0" name="dataInicioPerido" type="tns:dataInicioPeridoType" />
+      <xsd:element minOccurs="0" name="dataFimPeriodo" type="tns:dataFimPeriodoType" />
+      <xsd:element minOccurs="0" name="cpfCnpj" type="tns:cpfCnpjType" />
+      <xsd:element minOccurs="0" name="nome" type="tns:nomeType" />
+      <xsd:element minOccurs="0" name="endereco" type="tns:enderecoType" />
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:simpleType name="idSolicitacaoType">
+    <xsd:restriction base="xsd:string">
+      <xsd:maxLength value="15" />
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="dataSolicitacaoType">
+    <xsd:restriction base="xsd:string" />
+  </xsd:simpleType>
+  <xsd:simpleType name="idItemSolicitacaoType">
+    <xsd:restriction base="xsd:string">
+      <xsd:maxLength value="15" />
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="tipoSolicitacaoType">
+    <xsd:restriction base="xsd:string">
+      <xsd:maxLength value="10" />
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="msisdnType">
+    <xsd:restriction base="xsd:string">
+      <xsd:maxLength value="20" />
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="dataInicioPeridoType">
+    <xsd:restriction base="xsd:date" />
+  </xsd:simpleType>
+  <xsd:simpleType name="dataFimPeriodoType">
+    <xsd:restriction base="xsd:date" />
+  </xsd:simpleType>
+  <xsd:simpleType name="cpfCnpjType">
+    <xsd:restriction base="xsd:string">
+      <xsd:maxLength value="20" />
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="nomeType">
+    <xsd:restriction base="xsd:string">
+      <xsd:maxLength value="100" />
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:complexType name="enderecoType">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="descricaoLogradouro" type="tns:descricaoLogradouroType" />
+      <xsd:element minOccurs="0" name="nomeLogradouro" type="tns:nomeLogradouroType" />
+      <xsd:element minOccurs="0" name="numeroPorta" type="tns:numeroPortaType" />
+      <xsd:element minOccurs="0" name="tipoComplemento1" type="tns:tipoComplementoType" />
+      <xsd:element minOccurs="0" name="numeroComplemento1" type="tns:numeroComplementoType" />
+      <xsd:element minOccurs="0" name="tipoComplemento2" type="tns:tipoComplementoType" />
+      <xsd:element minOccurs="0" name="numeroComplemento2" type="tns:numeroComplementoType" />
+      <xsd:element minOccurs="0" name="tipoComplemento3" type="tns:tipoComplementoType" />
+      <xsd:element minOccurs="0" name="numeroComplemento3" type="tns:numeroComplementoType" />
+      <xsd:element minOccurs="0" name="bairro" type="tns:bairroType" />
+      <xsd:element minOccurs="0" name="cidade" type="tns:cidadeType" />
+      <xsd:element minOccurs="0" name="CEP" type="tns:CEPType" />
+      <xsd:element minOccurs="0" name="estado" type="tns:estadoType" />
+      <xsd:element minOccurs="0" name="nomeEstado" type="tns:nomeEstadoType" />
+      <xsd:element minOccurs="0" name="pais" type="tns:paisType" />
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:simpleType name="paisType">
+    <xsd:restriction base="xsd:string">
+      <xsd:maxLength value="30" />
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="nomeEstadoType">
+    <xsd:restriction base="xsd:string">
+      <xsd:maxLength value="72" />
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="estadoType">
+    <xsd:restriction base="xsd:string">
+      <xsd:maxLength value="2" />
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="CEPType">
+    <xsd:restriction base="xsd:string">
+      <xsd:maxLength value="8" />
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="cidadeType">
+    <xsd:restriction base="xsd:string">
+      <xsd:maxLength value="50" />
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="bairroType">
+    <xsd:restriction base="xsd:string">
+      <xsd:maxLength value="72" />
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="nomeAglomeradoType">
+    <xsd:restriction base="xsd:string">
+      <xsd:maxLength value="20" />
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="codigoAglomeradoType">
+    <xsd:restriction base="xsd:string">
+      <xsd:maxLength value="9" />
+      <xsd:pattern value="([0-9]?){9}" />
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="numeroComplementoType">
+    <xsd:restriction base="xsd:string">
+      <xsd:maxLength value="30" />
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="tipoComplementoType">
+    <xsd:restriction base="xsd:string">
+      <xsd:maxLength value="2" />
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="numeroPortaType">
+    <xsd:restriction base="xsd:string">
+      <xsd:maxLength value="15" />
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="nomeLogradouroType">
+    <xsd:restriction base="xsd:string">
+      <xsd:maxLength value="200" />
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="descricaoLogradouroType">
+    <xsd:restriction base="xsd:string">
+      <xsd:maxLength value="15" />
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="tipoLogradouroType">
+    <xsd:restriction base="xsd:string">
+      <xsd:maxLength value="15" />
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="codLogradouroType">
+    <xsd:restriction base="xsd:string">
+      <xsd:maxLength value="5" />
+      <xsd:pattern value="([0-9]?){5}" />
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="localidadeType">
+    <xsd:restriction base="xsd:string">
+      <xsd:maxLength value="4" />
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="codLocalidadeType">
+    <xsd:restriction base="xsd:string">
+      <xsd:maxLength value="5" />
+      <xsd:pattern value="([0-9]?){5}" />
+    </xsd:restriction>
+  </xsd:simpleType>
+</xsd:schema>

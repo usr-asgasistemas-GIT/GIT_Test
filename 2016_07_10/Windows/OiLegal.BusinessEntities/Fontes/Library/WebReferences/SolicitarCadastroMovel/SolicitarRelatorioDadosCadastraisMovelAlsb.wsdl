@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:esb="http://alsb.telemar/soap/esb" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://alsb.telemar/wsdl/TerminalMovel/SolicitarRelatorioDadosCadastraisMovelAlsb" xmlns:ns="http://schemas.xmlsoap.org/soap/encoding/" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:solRelReq="http://alsb.telemar/xsd/TelefoniaMovel/SolicitarRelatorioDadosCadastraisMovelRequest" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://alsb.telemar/wsdl/TerminalMovel/SolicitarRelatorioDadosCadastraisMovelAlsb" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xs:schema>
+      <xs:import schemaLocation="SolicitarRelatorioDadosCadastraisMovelRequest.xsd" namespace="http://alsb.telemar/xsd/TelefoniaMovel/SolicitarRelatorioDadosCadastraisMovelRequest" />
+      <xs:import schemaLocation="ResponseControl.xsd" namespace="http://alsb.telemar/soap/esb" />
+    </xs:schema>
+  </wsdl:types>
+  <wsdl:message name="SolicitarRelatorioDadosCadastraisMovelRequest">
+    <wsdl:part name="SolicitarRelatorioDadosCadastraisMovelRequest" element="solRelReq:SolicitarRelatorioDadosCadastraisMovelRequest" />
+  </wsdl:message>
+  <wsdl:message name="SolicitarRelatorioDadosCadastraisMovelResponse">
+    <wsdl:part name="SolicitarRelatorioDadosCadastraisMovelRequest" element="esb:ResponseControl" />
+  </wsdl:message>
+  <wsdl:portType name="SolicitarRelatorioDadosCadastraisMovel">
+    <wsdl:operation name="SolicitarRelatorioDadosCadastraisMovel">
+      <wsdl:input message="tns:SolicitarRelatorioDadosCadastraisMovelRequest" />
+      <wsdl:output message="tns:SolicitarRelatorioDadosCadastraisMovelResponse" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="SolicitarRelatorioDadosCadastraisMovelSOAP" type="tns:SolicitarRelatorioDadosCadastraisMovel">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="SolicitarRelatorioDadosCadastraisMovel">
+      <soap:operation soapAction="http://alsb.telemar/TerminalMovel/SolicitarRelatorioDadosCadastraisMovel" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="SolicitarRelatorioDadosCadastraisMovel">
+    <wsdl:port name="SolicitarRelatorioDadosCadastraisMovelSOAP" binding="tns:SolicitarRelatorioDadosCadastraisMovelSOAP">
+      <soap:address location="http://alsb.telemar/TerminalMovel/SolicitarRelatorioDadosCadastraisMovelProxySoap" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

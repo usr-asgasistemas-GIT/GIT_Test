@@ -1,0 +1,394 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{05087087-9B17-451C-B97C-A5F2B382479F}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AsgaSistemas.saga.CE.OiLegal.BusinessEntities</RootNamespace>
+    <AssemblyName>OiLegal.BusinessEntities</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x64' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x64' ">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug- FrontOnly|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Debug- FrontOnly\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug- FrontOnly|x64' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug- FrontOnly\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug- FrontOnly|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug- FrontOnly\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.VisualStudio.TeamSystem.Data.UnitTesting, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Domain\Area\Area.cs" />
+    <Compile Include="Domain\CN.cs" />
+    <Compile Include="Domain\ConfigInterim.cs" />
+    <Compile Include="Domain\Email.cs" />
+    <Compile Include="Domain\EmailEnviado.cs" />
+    <Compile Include="Domain\Empresa\Empresa.cs" />
+    <Compile Include="Domain\ERB\CodigoAreaUf.cs" />
+    <Compile Include="Domain\ERB\LAC.cs" />
+    <Compile Include="Domain\ERB\ERB.cs" />
+    <Compile Include="Domain\Evento.cs" />
+    <Compile Include="Domain\Favoritos\DadosFavoritos.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Domain\Favoritos\FiltroFavoritos.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Domain\GMT\Gmt_Central.cs" />
+    <Compile Include="Domain\GMT\Gmt_UF.cs" />
+    <Compile Include="Domain\Logging\LogSistema.cs" />
+    <Compile Include="Domain\Logging\MensagemLog.cs" />
+    <Compile Include="Domain\Permissao\Permissao.cs" />
+    <Compile Include="Domain\Pesquisa\AgrupadorDeDadosDaPesquisa.cs" />
+    <Compile Include="Domain\Pesquisa\AndamentoPesquisaAM.cs" />
+    <Compile Include="Domain\Pesquisa\AndamentoPesquisaOi.cs" />
+    <Compile Include="Domain\Pesquisa\CnAmazoniaCeluarPrazo.cs" />
+    <Compile Include="Domain\Pesquisa\ConsultaControleSittel.cs" />
+    <Compile Include="Domain\Pesquisa\ConsultaOperacoesSittel.cs" />
+    <Compile Include="Domain\Pesquisa\ControleIdSolicitacaoDa.cs" />
+    <Compile Include="Domain\Pesquisa\DadosReqSittel.cs" />
+    <Compile Include="Domain\Pesquisa\Historico\PesquisaHistoricoLoginEmail.cs" />
+    <Compile Include="Domain\Pesquisa\Ipdr\Bilhetador.cs" />
+    <Compile Include="Domain\Pesquisa\Ipdr\Produto.cs" />
+    <Compile Include="Domain\Pesquisa\Ipdr\Visao.cs" />
+    <Compile Include="Domain\Pesquisa\ListaDadosAssinantes.cs" />
+    <Compile Include="Domain\Pesquisa\ParametroCircuito.cs" />
+    <Compile Include="Domain\Pesquisa\ParametroIp.cs" />
+    <Compile Include="Domain\Pesquisa\Progresso.cs" />
+    <Compile Include="Domain\Pesquisa\RequestDadosAssinante.cs" />
+    <Compile Include="Domain\Pesquisa\ParametroAnatelMediacaoJec.cs" />
+    <Compile Include="Domain\Pesquisa\ParametroAssinante.cs" />
+    <Compile Include="Domain\Pesquisa\ParametroAssinanteBatch.cs" />
+    <Compile Include="Domain\Pesquisa\ParametroAssinanteFixaBatch.cs" />
+    <Compile Include="Domain\Pesquisa\ParametroAssinanteMovelBatch.cs" />
+    <Compile Include="Domain\Pesquisa\AssinantesFixa.cs" />
+    <Compile Include="Domain\Pesquisa\AssinantesMovel.cs" />
+    <Compile Include="Domain\Pesquisa\ParametroAuxiliar.cs" />
+    <Compile Include="Domain\Pesquisa\ParametroBasePesquisa.cs" />
+    <Compile Include="Domain\Pesquisa\ParametroBilhetador.cs" />
+    <Compile Include="Domain\Pesquisa\ParametroCamposCDRFiltro.cs" />
+    <Compile Include="Domain\Pesquisa\ParametroCamposCDRRetornados.cs" />
+    <Compile Include="Domain\Pesquisa\ParametroDadosCadastraisAM.cs" />
+    <Compile Include="Domain\Pesquisa\Consulta.cs" />
+    <Compile Include="Domain\Pesquisa\ParametroGPRS.cs" />
+    <Compile Include="Domain\Pesquisa\ParametroTerminais.cs" />
+    <Compile Include="Domain\Pesquisa\Pesquisa.cs" />
+    <Compile Include="Domain\Pesquisa\Parametro.cs" />
+    <Compile Include="Domain\Pesquisa\Historico\PesquisaHistoricoEmail.cs" />
+    <Compile Include="Domain\Pesquisa\Historico\PesquisaHistoricoImei.cs" />
+    <Compile Include="Domain\Pesquisa\Historico\PesquisaHistoricoTerminal.cs" />
+    <Compile Include="Domain\Pesquisa\Wll\RequestCadastralCrmFixa.cs" />
+    <Compile Include="Domain\Pesquisa\Wll\TerminalWll.cs" />
+    <Compile Include="Domain\Protocolo\Arquivo.cs" />
+    <Compile Include="Domain\Protocolo\ConfiguracoesSittel.cs" />
+    <Compile Include="Domain\Protocolo\DuracaoInterceptacao.cs" />
+    <Compile Include="Domain\Protocolo\EmailSittel.cs" />
+    <Compile Include="Domain\Protocolo\Hbv.cs" />
+    <Compile Include="Domain\Protocolo\MarcarProtocoloRequisicaoConcluido.cs" />
+    <Compile Include="Domain\Protocolo\MensagemLivreSittel.cs" />
+    <Compile Include="Domain\Protocolo\ModeloCarta.cs" />
+    <Compile Include="Domain\Protocolo\OrgaoSittel.cs" />
+    <Compile Include="Domain\Protocolo\PermissaoProtocolo.cs" />
+    <Compile Include="Domain\Protocolo\TipoRejeicao.cs" />
+    <Compile Include="Domain\Resultado\AssinanteAmazonia.cs" />
+    <Compile Include="Domain\Resultado\Chamada.cs" />
+    <Compile Include="Domain\Resultado\ChamadaFixaCompleta.cs" />
+    <Compile Include="Domain\Resultado\ChamadaMensagem.cs" />
+    <Compile Include="Domain\Resultado\ChamadaMMS.cs" />
+    <Compile Include="Domain\Resultado\ChamadaMovelCompleta.cs" />
+    <Compile Include="Domain\Resultado\ChamadaSMS.cs" />
+    <Compile Include="Domain\Resultado\NonoDigito\ChamadaNonoDigito.cs" />
+    <Compile Include="Domain\Resultado\RegistroIp.cs" />
+    <Compile Include="Domain\Resultado\ResultadoConsulta.cs" />
+    <Compile Include="Domain\Resultado\ResultadoPesquisa.cs" />
+    <Compile Include="Domain\ProcessadorCDR\CampoCDR.cs" />
+    <Compile Include="Domain\ProcessadorCDR\TipoCDR.cs" />
+    <Compile Include="Domain\Protocolo\CalculaDataOperador.cs" />
+    <Compile Include="Domain\Protocolo\CalculadoraData.cs" />
+    <Compile Include="Domain\Protocolo\CalculadoraDataType.cs" />
+    <Compile Include="Domain\Protocolo\CartaResposta.cs" />
+    <Compile Include="Domain\Protocolo\NumeroSensivel.cs" />
+    <Compile Include="Domain\Protocolo\Endereco.cs" />
+    <Compile Include="Domain\Protocolo\Prazo.cs" />
+    <Compile Include="Domain\Protocolo\Protocolo.cs" />
+    <Compile Include="Domain\Protocolo\Recebimentos.cs" />
+    <Compile Include="Domain\Protocolo\RecebimentoType.cs" />
+    <Compile Include="Domain\Protocolo\Requerente.cs" />
+    <Compile Include="Domain\Protocolo\Requisicao.cs" />
+    <Compile Include="Domain\Protocolo\StatusRequisicaoType.cs" />
+    <Compile Include="Domain\Protocolo\TipoRequisicao.cs" />
+    <Compile Include="Domain\Resultado\Assinante.cs" />
+    <Compile Include="Domain\Resultado\ChamadaFixa.cs" />
+    <Compile Include="Domain\Resultado\ChamadaMovel.cs" />
+    <Compile Include="Domain\Resultado\Endereco.cs" />
+    <Compile Include="Domain\Protocolo\OrdemSittel.cs" />
+    <Compile Include="Domain\Sittel\MensagemSittel.cs" />
+    <Compile Include="Domain\Sittel\RelatorioAtividadeSittel.cs" />
+    <Compile Include="Domain\Sittel\RespostaInterceptacao.cs" />
+    <Compile Include="Domain\Sittel\ResultadoPesquisaSittel.cs" />
+    <Compile Include="Domain\Sittel\ResultadoRequisicao.cs" />
+    <Compile Include="Domain\Usuario\GraficoConfiguracao\GraficoConfiguracoes.cs" />
+    <Compile Include="Domain\Usuario\Usuario.cs" />
+    <Compile Include="Domain\Usuario\Hierarquia\Hierarquia.cs" />
+    <Compile Include="Enums\Consulta\EnumStatusProtocolo.cs" />
+    <Compile Include="Enums\Consulta\EnumTipoServico.cs" />
+    <Compile Include="Enums\Favoritos\FieldsTypes.cs" />
+    <Compile Include="Enums\Logging\EnumLogSistema.cs" />
+    <Compile Include="Enums\Pesquisa\EnumCdrConcatenado.cs" />
+    <Compile Include="Enums\Pesquisa\EnumDirecao.cs" />
+    <Compile Include="Enums\Pesquisa\EnumModoResultado.cs" />
+    <Compile Include="Enums\Pesquisa\EnumOrigemSolicitacao.cs" />
+    <Compile Include="Enums\Pesquisa\EnumTipoAtendimento.cs" />
+    <Compile Include="Enums\Pesquisa\NonoDigito\EnumFlagExistenciaNonoDigito.cs" />
+    <Compile Include="Enums\Pesquisa\Wll\TipoDeAtivacaoWll.cs" />
+    <Compile Include="Enums\Request\EnumStatusRequest.cs" />
+    <Compile Include="Enums\EnumArea.cs" />
+    <Compile Include="Enums\EnumPaginasControleUsuario.cs" />
+    <Compile Include="Enums\Consulta\EnumPrioridade.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Enums\Consulta\EnumStatusPesquisaParametro.cs" />
+    <Compile Include="Enums\Consulta\EnumTipoBusca.cs" />
+    <Compile Include="Enums\Consulta\EnumTipoPesquisa.cs" />
+    <Compile Include="Enums\Consulta\EnumTipoResultado.cs" />
+    <Compile Include="Enums\EnumColunaChamada.cs" />
+    <Compile Include="Enums\EnumFieldType.cs" />
+    <Compile Include="Enums\EnumGrafico.cs" />
+    <Compile Include="Enums\EnumHelp.cs" />
+    <Compile Include="Domain\Usuario\Grupo\Grupo.cs" />
+    <Compile Include="Enums\EnumMedicao.cs" />
+    <Compile Include="Domain\Protocolo\Comarca.cs" />
+    <Compile Include="Domain\Protocolo\Emissor.cs" />
+    <Compile Include="Domain\Protocolo\Oficio.cs" />
+    <Compile Include="Domain\Protocolo\Origem.cs" />
+    <Compile Include="Domain\Protocolo\TipoDocumento.cs" />
+    <Compile Include="Domain\Protocolo\TipoEmissor.cs" />
+    <Compile Include="Domain\Protocolo\Vara.cs" />
+    <Compile Include="Domain\Cidade.cs" />
+    <Compile Include="Domain\Protocolo\OficioExtraJudicial.cs" />
+    <Compile Include="Domain\Protocolo\OrgaoEmissor.cs" />
+    <Compile Include="Domain\Protocolo\TipoOrgaoEmissor.cs" />
+    <Compile Include="Domain\IEnumerableClass.cs" />
+    <Compile Include="Domain\UF.cs" />
+    <Compile Include="Enums\EnumPermissao.cs" />
+    <Compile Include="Enums\EnumTecnologiaCDR.cs" />
+    <Compile Include="Enums\EnumTipoData.cs" />
+    <Compile Include="Enums\EnumTipoRelatorio.cs" />
+    <Compile Include="Enums\EnumTipoSentido.cs" />
+    <Compile Include="Enums\EnumTipoTerminal.cs" />
+    <Compile Include="Enums\EnumUser.cs" />
+    <Compile Include="Enums\Logging\EnumModulo.cs" />
+    <Compile Include="Enums\Logging\EnumSubModuloDispatcher.cs" />
+    <Compile Include="Enums\Logging\EnumSubModuloFlatFiles.cs" />
+    <Compile Include="Enums\Logging\EnumSubModuloFrotEnd.cs" />
+    <Compile Include="Enums\Logging\EnumSubModuloSistemasOI.cs" />
+    <Compile Include="Enums\Pesquisa\BuscaPorNaNb.cs" />
+    <Compile Include="Enums\Pesquisa\OcorrenciaDoLimitante.cs" />
+    <Compile Include="Enums\Pesquisa\EnumJecProconTipoRelatorio.cs" />
+    <Compile Include="Enums\Pesquisa\EnumResultadoPersistencia.cs" />
+    <Compile Include="Enums\Pesquisa\EnumJecProconTerminalDestino.cs" />
+    <Compile Include="Enums\Pesquisa\TipoDeNumero.cs" />
+    <Compile Include="Enums\ProcessadorCDR\EnumResultadoObtencaoArquivo.cs" />
+    <Compile Include="Enums\ProcessadorCDR\EnumTipoCDR.cs" />
+    <Compile Include="Enums\ProcessadorCDR\EnumTipoLinhaCDR.cs" />
+    <Compile Include="Enums\Requisicao\EnumRequisicaoAgrupada.cs" />
+    <Compile Include="Enums\Requisicao\EnumTipoBaixa.cs" />
+    <Compile Include="Enums\Requisicao\EnumTipoConteudoInterceptacao.cs" />
+    <Compile Include="Enums\Requisicao\EnumTipoDeRequisicao.cs" />
+    <Compile Include="Enums\Sittel\ArquivoSittel.cs" />
+    <Compile Include="Enums\Sittel\EnumAtividadeSittel.cs" />
+    <Compile Include="Enums\Sittel\EnumReceberStatusAnaliseRequisicao.cs" />
+    <Compile Include="Enums\Sittel\EnumStatusEnvioSittel.cs" />
+    <Compile Include="Enums\Sittel\EnumStatusSittel.cs" />
+    <Compile Include="Enums\Sittel\EnumTipoResultadoSittel.cs" />
+    <Compile Include="Extensions\EnumExtensions.cs" />
+    <Compile Include="Extensions\IntExtensions.cs" />
+    <Compile Include="Extensions\StringExtensions.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Domain\Sittel\ResultadoInterceptacaoSittel.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties BuildVersion_UseGlobalSettings="True" BuildVersion_UpdateFileVersion="False" BuildVersion_UpdateAssemblyVersion="False" BuildVersion_StartDate="1975/10/21" BuildVersion_BuildVersioningStyle="None.None.None.None" BuildVersion_BuildAction="Both" />
+    </VisualStudio>
+  </ProjectExtensions>
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

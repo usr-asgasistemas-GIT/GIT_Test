@@ -1,0 +1,75 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{D11CA550-4C65-4AC9-902E-BC732E5F0628}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OiLegal.BusinessEntities", "OiLegal.BusinessEntities\OiLegal.BusinessEntities.csproj", "{05087087-9B17-451C-B97C-A5F2B382479F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OiLegal.BusinessEntities.Test", "OiLegal.BusinessEntities.Test\OiLegal.BusinessEntities.Test.csproj", "{FAF219B1-5716-4174-BE55-DA2B2EBC0325}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 3
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://asga-vsts:8080/tfs/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = OiLegal.BusinessEntities\\OiLegal.BusinessEntities.csproj
+		SccProjectName1 = OiLegal.BusinessEntities
+		SccLocalPath1 = OiLegal.BusinessEntities
+		SccProjectUniqueName2 = OiLegal.BusinessEntities.Test\\OiLegal.BusinessEntities.Test.csproj
+		SccProjectName2 = OiLegal.BusinessEntities.Test
+		SccLocalPath2 = OiLegal.BusinessEntities.Test
+	EndGlobalSection
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = OiLegal.BusinessEntities.vsmdi
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug- FrontOnly|Any CPU = Debug- FrontOnly|Any CPU
+		Debug- FrontOnly|x64 = Debug- FrontOnly|x64
+		Debug- FrontOnly|x86 = Debug- FrontOnly|x86
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{05087087-9B17-451C-B97C-A5F2B382479F}.Debug- FrontOnly|Any CPU.ActiveCfg = Debug- FrontOnly|Any CPU
+		{05087087-9B17-451C-B97C-A5F2B382479F}.Debug- FrontOnly|Any CPU.Build.0 = Debug- FrontOnly|Any CPU
+		{05087087-9B17-451C-B97C-A5F2B382479F}.Debug- FrontOnly|x64.ActiveCfg = Debug- FrontOnly|x64
+		{05087087-9B17-451C-B97C-A5F2B382479F}.Debug- FrontOnly|x64.Build.0 = Debug- FrontOnly|x64
+		{05087087-9B17-451C-B97C-A5F2B382479F}.Debug- FrontOnly|x86.ActiveCfg = Debug- FrontOnly|x86
+		{05087087-9B17-451C-B97C-A5F2B382479F}.Debug- FrontOnly|x86.Build.0 = Debug- FrontOnly|x86
+		{05087087-9B17-451C-B97C-A5F2B382479F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{05087087-9B17-451C-B97C-A5F2B382479F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{05087087-9B17-451C-B97C-A5F2B382479F}.Debug|x64.ActiveCfg = Debug|x64
+		{05087087-9B17-451C-B97C-A5F2B382479F}.Debug|x64.Build.0 = Debug|x64
+		{05087087-9B17-451C-B97C-A5F2B382479F}.Debug|x86.ActiveCfg = Debug|x86
+		{05087087-9B17-451C-B97C-A5F2B382479F}.Debug|x86.Build.0 = Debug|x86
+		{05087087-9B17-451C-B97C-A5F2B382479F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{05087087-9B17-451C-B97C-A5F2B382479F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{05087087-9B17-451C-B97C-A5F2B382479F}.Release|x64.ActiveCfg = Release|x64
+		{05087087-9B17-451C-B97C-A5F2B382479F}.Release|x64.Build.0 = Release|x64
+		{05087087-9B17-451C-B97C-A5F2B382479F}.Release|x86.ActiveCfg = Release|x86
+		{05087087-9B17-451C-B97C-A5F2B382479F}.Release|x86.Build.0 = Release|x86
+		{FAF219B1-5716-4174-BE55-DA2B2EBC0325}.Debug- FrontOnly|Any CPU.ActiveCfg = Debug|Any CPU
+		{FAF219B1-5716-4174-BE55-DA2B2EBC0325}.Debug- FrontOnly|Any CPU.Build.0 = Debug|Any CPU
+		{FAF219B1-5716-4174-BE55-DA2B2EBC0325}.Debug- FrontOnly|x64.ActiveCfg = Debug|Any CPU
+		{FAF219B1-5716-4174-BE55-DA2B2EBC0325}.Debug- FrontOnly|x86.ActiveCfg = Debug|Any CPU
+		{FAF219B1-5716-4174-BE55-DA2B2EBC0325}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FAF219B1-5716-4174-BE55-DA2B2EBC0325}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FAF219B1-5716-4174-BE55-DA2B2EBC0325}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{FAF219B1-5716-4174-BE55-DA2B2EBC0325}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{FAF219B1-5716-4174-BE55-DA2B2EBC0325}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FAF219B1-5716-4174-BE55-DA2B2EBC0325}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FAF219B1-5716-4174-BE55-DA2B2EBC0325}.Release|x64.ActiveCfg = Release|Any CPU
+		{FAF219B1-5716-4174-BE55-DA2B2EBC0325}.Release|x86.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		BuildVersion_UseGlobalSettings = False
+	EndGlobalSection
+EndGlobal
